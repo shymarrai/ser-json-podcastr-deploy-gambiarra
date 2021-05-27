@@ -3,6 +3,7 @@ const app = express()
 const fileAPI = require('./db.json')
 
 console.log(fileAPI)
+console.log(process.env.PORT)
 
 app.use('/', (req,res) => {
   //res.send('index.html')
