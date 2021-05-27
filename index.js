@@ -5,6 +5,7 @@ const fileAPI = require('./db.json')
 console.log(fileAPI)
 
 app.use('/', (req,res) => {
+  res.send('index.html')
   return res.json(fileAPI)
 })
 
