@@ -5,8 +5,8 @@ const fileAPI = require('./db.json')
 console.log(fileAPI)
 
 app.use('/', (req,res) => {
-  res.send('index.html')
+  //res.send('index.html')
   return res.json(fileAPI)
 })
 
-app.listen(3333, () => console.log('SERVER IS RUNNING'))
+app.listen(process.env.PORT || 3333, () => console.log('SERVER IS RUNNING'))
